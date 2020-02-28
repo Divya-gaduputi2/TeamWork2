@@ -1,0 +1,5 @@
+package com.adb.contact.model;
+
+public class GroupModel {
+
+}

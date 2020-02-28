@@ -1,0 +1,13 @@
+package com.adb.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class StageAbdGroupServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(StageAbdGroupServiceApplication.class, args);
+	}
+
+}
