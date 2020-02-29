@@ -1,0 +1,32 @@
+<div class="content">
+    <div class="row ">
+        <div class="d-flex justify-content-end col-sm-12">
+        <div class="container p-3 my-3 border position-relative">
+<h2>Appointments List</h2>
+
+<a routerLink="addEmp">Add Appointment</a>
+<p *ngIf="!emps && !errMsg">Please wait its loading....</p>
+<p *ngIf="errMsg">{{errMsg}}</p>
+
+<table  cellspacing=10 *ngIf="emps">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of emps">
+            <td>{{e.firstName | uppercase}} {{e.lastName  | uppercase}}</td>
+            <td>{{e.mobileNumber}}</td>
+            <td>{{e.email}}</td>
+            <td>{{e.address}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>

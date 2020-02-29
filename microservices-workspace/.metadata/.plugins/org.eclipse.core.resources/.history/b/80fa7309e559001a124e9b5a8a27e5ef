@@ -1,7 +1,0 @@
-package com.adb.dao;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface GroupRepositary extends JpaRepository<T, ID> {
-
-}

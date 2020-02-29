@@ -1,0 +1,196 @@
+<div class="content">
+    <div class="row ">
+        <div class="d-flex justify-content-end col-sm-12">
+        <div class="container p-3 my-3 border position-relative">
+
+<form (ngSubmit)="save()">
+
+    <div>
+        <label>First Name</label>
+        <input type="text" name="fnm" [(ngModel)]="emp.firstName"/>
+    </div>
+    <div>
+        <label>Last Name</label>
+        <input type="text" name="lnm" [(ngModel)]="emp.lastName"/>
+    </div>
+    
+
+    <div>
+        <label>Age</label>
+        <input type="number" name="age"/>
+    </div>
+    <div>
+        <label>Mobile Number</label>
+        <input type="text" name="mno" [(ngModel)]="emp.mobileNumber"/>
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="email" name="mail" [(ngModel)]="emp.email"/>
+    </div>
+    <div>
+        <label>Address</label>
+        <input type="text" name="address" [(ngModel)]="emp.address"/>
+    </div>
+    <div class="form-group">
+        <legend >Trainee Preference</legend>
+        
+        <div class="radio">
+          <label for="preference-0">
+            <input type="radio" name="preference" id="preference-0" value="male" checked="checked">
+            Male Trainee
+          </label>
+        </div>
+        <div class="radio">
+          <label for="preference-1">
+            <input type="radio" name="preference" id="preference-1" value="female">
+            Female Trainee
+          </label>
+        </div>
+        <div class="radio">
+          <label for="preference-2">
+            <input type="radio" name="preference" id="preference-2" value="no">
+            No Preference
+          </label>
+        </div>
+        <div class="radio">
+          <label for="preference-3">
+            <input type="radio" name="preference" id="preference-3" value="tname">
+        
+            Trainee Name
+      <input type="text" value="tnames">
+          </label>
+        </div>
+        <div class="radio">
+          <label for="preference-4">
+            <input type="radio" name="preference" id="preference-4" value="other">
+        
+            Others
+      <input type="text" value="oname">
+          </label>
+        </div>
+        
+      </div>
+      
+      <!-- Multiple Radios (inline) -->
+      <div class="form-group">
+        <label >Do you need Physical Therapist?</label>
+        
+          <label class="radio-inline" for="physical-0">
+            <input type="radio" name="physical" id="physical-0" value="yes" checked="checked">
+            Yes
+          </label> 
+          <label class="radio-inline" for="physical-1">
+            <input type="radio" name="physical" id="physical-1" value="no">
+            No
+          </label>
+        
+      </div>
+      <div>
+        <label>Appointment : (Free)</label>
+        <p></p>
+        <table border="2" cellspacing=10>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>7 to 9AM</th>
+              <th>9 to 11AM</th>
+              <th>11 to 1PM</th>
+              <th>1 to 3PM</th>
+              <th>3 to 5PM</th>  
+            </tr>
+          </thead>
+          <tbody id="one">
+            <tr>
+              <td>Monday</td>
+              <td><input type="radio" name="reason" value="1">1</td>
+              <td><input type="radio" name="reason" value="2">2</td>
+              <td><input type="radio" name="reason" value="3">3</td>
+              <td><input type="radio" name="reason" value="4">4</td>
+              <td><input type="radio" name="reason" value="5">5</td>
+            </tr>
+    
+            <tr>
+              <td>Tuesday</td>
+              <td><input type="radio" name="reason" value="1">1</td>
+              <td><input type="radio" name="reason" value="2">2</td>
+              <td><input type="radio" name="reason" value="3">3</td>
+              <td><input type="radio" name="reason" value="4">4</td>
+              <td><input type="radio" name="reason" value="5">5</td>
+            </tr>
+    
+            <tr>
+              <td>Wednesday</td>
+              <td><input type="radio" name="reason" value="1">1</td>
+              <td><input type="radio" name="reason" value="2">2</td>
+              <td><input type="radio" name="reason" value="3">3</td>
+              <td><input type="radio" name="reason" value="4">4</td>
+              <td><input type="radio" name="reason" value="5">5</td>
+            </tr>
+    
+            <tr>
+              <td>Thursday</td>
+              <td><input type="radio" name="reason" value="1">1</td>
+              <td><input type="radio" name="reason" value="2">2</td>
+              <td><input type="radio" name="reason" value="3">3</td>
+              <td><input type="radio" name="reason" value="4">4</td>
+              <td><input type="radio" name="reason" value="5">5</td>
+            </tr>
+    
+            <tr>
+              <td>Friday</td>
+              <td><input type="radio" name="reason" value="1">1</td>
+              <td><input type="radio" name="reason" value="2">2</td>
+              <td><input type="radio" name="reason" value="3">3</td>
+              <td><input type="radio" name="reason" value="4">4</td>
+              <td><input type="radio" name="reason" value="5">5</td>
+            </tr>
+    
+            <tr>
+              <td>Saturday</td>
+              <td><input type="radio" name="reason" value="1">1</td>
+              <td><input type="radio" name="reason" value="2">2</td>
+              <td><input type="radio" name="reason" value="3">3</td>
+              <td><input type="radio" name="reason" value="4">4</td>
+              <td><input type="radio" name="reason" value="5">5</td>
+            </tr>
+    
+            <tr>
+              <td>Sunday</td>
+              <td><input type="radio" name="reason" value="1">1</td>
+              <td><input type="radio" name="reason" value="2">2</td>
+              <td><input type="radio" name="reason" value="3">3</td>
+              <td><input type="radio" name="reason" value="4">4</td>
+              <td><input type="radio" name="reason" value="5">5</td>
+            </tr>
+          </tbody>
+        </table>
+    
+      </div><br>
+      <fieldset>
+        <legend>SELECT A PACKAGE</legend>
+        <p><label><input type="radio" name="one" id="p1">One Time Assessment (INR 500)</label></p>
+        <p><label><input type="radio" name="four" id="p2">Four Weekly Sessions (INR 1200)</label></p>
+        <p><label><input type="radio" name="week" id="p3">Twelve Weekly Sessions(INR 3000)</label></p>
+        <p><label><input type="radio" name="other" id="p4">Other</label></p>
+      </fieldset>
+      
+      <p>
+        <label>Appointment Date/Time
+          <input type="datetime-local" min="2020-08-02" name="appointmentDate" required>
+        </label>
+      </p>
+      <p>
+        <label>Quote</label>
+      </p>
+      INR:<input type="text" size=10>
+      Paise:<input type="text" size=10>
+      <br>
+    <div>
+        <button (click)="ngSubmit">save</button>
+    </div>
+
+</form>
+</div>
+</div>
+</div>
+</div>

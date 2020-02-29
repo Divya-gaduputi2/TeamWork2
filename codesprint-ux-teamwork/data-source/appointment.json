@@ -1,0 +1,64 @@
+{
+  "emps": [
+    {
+      "empId": 0,
+      "firstName": "gfh",
+      "lastName": "fghf",
+      "basic": 4522,
+      "mobileNumber": "4547413274",
+      "email": "meena@gmail.com",
+      "dept": "Development",
+      "id": 4
+    },
+    {
+      "empId": 0,
+      "firstName": "pushpa reddy",
+      "lastName": "mothuku",
+      "age": 0,
+      "mobileNumber": "9961630397",
+      "email": "push@gmail.com",
+      "address": "chittoor",
+      "id": 5
+    },
+    {
+      "empId": 0,
+      "firstName": "digvya",
+      "lastName": "gaduputi",
+      "age": 0,
+      "mobileNumber": "9876543210",
+      "email": "digvya@gmail.com",
+      "address": "kundanahalli",
+      "id": 6
+    },
+    {
+      "empId": 0,
+      "firstName": "mahesh",
+      "lastName": "uma",
+      "age": 0,
+      "mobileNumber": "8919196614",
+      "email": "maheshuma666@gmail.com",
+      "address": "kr palli",
+      "id": 7
+    },
+    {
+      "empId": 0,
+      "firstName": "",
+      "lastName": "",
+      "age": 0,
+      "mobileNumber": "",
+      "email": "",
+      "address": "",
+      "id": 8
+    },
+    {
+      "empId": 0,
+      "firstName": "Risahbh",
+      "lastName": "Kumar",
+      "age": 0,
+      "mobileNumber": "9876543210",
+      "email": "dipesh@gmail.com",
+      "address": "fsdfhoiwshed ",
+      "id": 9
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.sidebar {
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    z-index:1000;
+    overflow-x: hidden;
+    background: #f0b4b4;
+    border-right: 1px solid #eee;
+    padding: 20px;
+  }
+
+  .nav-link{
+    color: black;
+  }
+  
+  .sidebar .nav-link:hover{
+      color: black;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      
+  }

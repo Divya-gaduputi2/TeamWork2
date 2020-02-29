@@ -1,0 +1,6 @@
+My associate id:
+844224 .other team members:
+844226, 844236, 844271 
+Team lead:
+844226. My Role in team:
+1. To develop contact us component and form validation

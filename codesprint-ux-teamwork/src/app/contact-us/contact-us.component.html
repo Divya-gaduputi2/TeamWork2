@@ -1,0 +1,80 @@
+<div class="content">
+    <div class="row ">
+        <div class="d-flex justify-content-end col-sm-12">
+            <div class="container p-3 my-3 border position-relative">
+              
+                    <legend><h1>CONTACT US:</h1></legend>
+                    <div class="row">
+                        <div class="col-md-7 col-sm-10">        
+                            <form [formGroup]="support">
+                                <div class="form-group">
+                                    <input class="form-control" formControlName="fname" type="text" placeholder="First Name*" />
+                                </div>
+                                <div class="error-messages">
+                                    <ng-container *ngFor="let error of error_messages.fname">
+                                        <div class="error-message" *ngIf="support.get('fname').hasError(error.type) && (support.get('fname').dirty || support.get('fname').touched)">
+                                            {{ error.message }}
+                                        </div>
+                                    </ng-container>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="form-control" formControlName="lname" type="text" placeholder="Last Name*"/>
+                                </div>
+                                <div class="error-messages">
+                                    <ng-container *ngFor="let error of error_messages.lname">
+                                        <div class="error-message" *ngIf="support.get('lname').hasError(error.type) && (support.get('lname').dirty || support.get('lname').touched)">
+                                            {{ error.message }}
+                                        </div>
+                                    </ng-container>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input class="form-control" formControlName="email" type="email" placeholder="Email ID*" />
+                                </div>
+                                <div class="error-messages">
+                                    <ng-container *ngFor="let error of error_messages.email">
+                                        <div class="error-message" *ngIf="support.get('email').hasError(error.type) && (support.get('email').dirty || support.get('email').touched)">
+                                            {{ error.message }}
+                                        </div>
+                                    </ng-container>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" formControlName="message" placeholder="Message*"></textarea>
+                                </div>
+                                <div class="error-messages">
+                                    <ng-container *ngFor="let error of error_messages.message">
+                                        <div class="error-message" *ngIf="support.get('message').hasError(error.type) && (support.get('message').dirty || support.get('message').touched)">
+                                            {{ error.message }}
+                                        </div>
+                                    </ng-container>
+                                </div>
+    
+        
+                                <div class="form-group">
+                                    <input type="button" class="form-control btn btn-secondary" [disabled]="!support.valid" routerLink="thank" value="Send Message"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            
+            </div>
+        </div>
+                 
+        <div class="col-sm-12">
+            <div class="container p-3 border position-relative">
+                    
+                            <legend><h1>CONTACT INFO:</h1></legend>
+                            <p><i class="fa fa-map-marker"></i><label>Address:</label> 456 WhiteFeild 22000, Banglore City, India</p>
+                            <p><i class="fa fa-comment"></i><label>Contact Mail:</label> <a href="mailto:abcdef@gmail.com"> info@company.com</a></p>
+                            <p><i class="fa fa-phone"></i><label>Contact Number:</label> +91 9867354261</p>
+                     
+                        
+                    </div>
+    
+            </div>
+        </div>
+    </div>   
